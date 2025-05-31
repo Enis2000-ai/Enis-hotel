@@ -17,6 +17,15 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
+    input, textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 8px 0;
+      font-size: 1em;
+    }
+    form {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -24,19 +33,19 @@
   <p>Адрес: ул. "Трети март" 29, Сапарева баня</p>
 
   <h2>Басейн</h2>
-  <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/287583370.jpg" alt="Басейн">
+  <img src="https://images.unsplash.com/photo-1618786016634-98a27b4ab7a3?auto=format&fit=crop&w=1200&q=80" alt="Басейн">
 
   <h2>Нашите стаи</h2>
-  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583323.jpg" alt="Стая 1">
-  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583308.jpg" alt="Стая 2">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Стая 1">
+  <img src="https://images.unsplash.com/photo-1560448071-0210b3a027a2?auto=format&fit=crop&w=1200&q=80" alt="Стая 2">
 
   <h2>Форма за резервация</h2>
   <form action="mailto:enis2000@abv.bg" method="post" enctype="text/plain">
-    <input type="text" name="Име" placeholder="Вашето име" required><br><br>
-    <input type="email" name="Имейл" placeholder="Вашият имейл" required><br><br>
-    <input type="date" name="Дата на пристигане" required><br><br>
-    <input type="date" name="Дата на заминаване" required><br><br>
-    <textarea name="Бележки" placeholder="Допълнителна информация"></textarea><br><br>
+    <input type="text" name="Име" placeholder="Вашето име" required><br>
+    <input type="email" name="Имейл" placeholder="Вашият имейл" required><br>
+    <input type="date" name="Дата на пристигане" required><br>
+    <input type="date" name="Дата на заминаване" required><br>
+    <textarea name="Бележки" placeholder="Допълнителна информация"></textarea><br>
     <input type="submit" value="Изпрати резервация">
   </form>
 </body>

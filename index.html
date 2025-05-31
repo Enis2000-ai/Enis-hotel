@@ -3,91 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Енис хотел и Спа | Сапарева баня</title>
+  <title>Енис хотел и Спа</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f5f5f5; }
-    header { background: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583370.jpg') center/cover no-repeat;
-             height: 400px; color: white; display: flex; align-items: center; justify-content: center; text-shadow: 1px 1px 4px black; }
-    header h1 { font-size: 3em; }
-    nav { background: #333; color: white; text-align: center; padding: 10px 0; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; }
-    section { padding: 20px; background: white; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .rooms { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .room { flex: 1 1 300px; background: #fff; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
-    .room img { width: 100%; height: 200px; object-fit: cover; }
-    form input, form select { display: block; width: 100%; padding: 10px; margin: 10px 0; }
-    form button { padding: 10px 20px; background: #2b7a78; color: white; border: none; cursor: pointer; }
-    footer { background: #333; color: white; text-align: center; padding: 15px; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%%;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 <body>
-  <header><h1>Енис хотел и Спа</h1></header>
-  <nav>
-    <a href="#about">За хотела</a>
-    <a href="#rooms">Стаи</a>
-    <a href="#booking">Резервация</a>
-    <a href="#contact">Контакт</a>
-  </nav>
+  <h1>Добре дошли в Енис хотел и Спа</h1>
+  <p>Адрес: ул. "Трети март" 29, Сапарева баня</p>
 
-  <section id="about">
-    <h2>Добре дошли в Енис хотел и Спа</h2>
-    <p>Разположен в подножието на Рила планина, в град Сапарева баня, нашият хотел предлага уют, спокойствие и възможност за пълен релакс в СПА центъра ни с минерална вода.</p>
-  </section>
+  <h2>Басейн</h2>
+  <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/287583370.jpg" alt="Басейн">
 
-  <section id="rooms">
-    <h2>Нашите стаи</h2>
-    <div class="rooms">
-      <div class="room">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583323.jpg" alt="Двойна стая">
-        <div style="padding: 10px">
-          <h3>Двойна стая</h3>
-          <p>Уютна стая за двама с изглед към планината. Цена: 120 лв./вечер</p>
-        </div>
-      </div>
-      <div class="room">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583308.jpg" alt="Студио">
-        <div style="padding: 10px">
-          <h3>Студио</h3>
-          <p>Просторно студио с кухненски бокс и балкон. Цена: 150 лв./вечер</p>
-        </div>
-      </div>
-      <div class="room">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583382.jpg" alt="Апартамент">
-        <div style="padding: 10px">
-          <h3>Апартамент</h3>
-          <p>Луксозен апартамент с отделна спалня и хол. Цена: 180 лв./вечер</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <h2>Нашите стаи</h2>
+  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583323.jpg" alt="Стая 1">
+  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/287583308.jpg" alt="Стая 2">
 
-  <section id="booking">
-    <h2>Направете резервация</h2>
-    <form action="https://formspree.io/f/moqgddyo" method="POST">
-      <input type="text" name="name" placeholder="Вашето име" required>
-      <input type="email" name="email" placeholder="Имейл" required>
-      <input type="tel" name="phone" placeholder="Телефон" required>
-      <input type="date" name="checkin" required>
-      <input type="date" name="checkout" required>
-      <select name="room">
-        <option value="Двойна стая">Двойна стая</option>
-        <option value="Студио">Студио</option>
-        <option value="Апартамент">Апартамент</option>
-      </select>
-      <button type="submit">Изпрати</button>
-    </form>
-  </section>
-
-  <section id="contact">
-    <h2>Контакт</h2>
-    <p>Адрес: гр. Сапарева баня, ул. Пирин 15</p>
-    <p>Телефон: 0888 123 456</p>
-    <p>Имейл: enis2000@abv.bg</p>
-    <iframe src="https://maps.google.com/maps?q=Sapareva%20Banya&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Енис хотел и Спа | Всички права запазени</p>
-  </footer>
+  <h2>Форма за резервация</h2>
+  <form action="mailto:enis2000@abv.bg" method="post" enctype="text/plain">
+    <input type="text" name="Име" placeholder="Вашето име" required><br><br>
+    <input type="email" name="Имейл" placeholder="Вашият имейл" required><br><br>
+    <input type="date" name="Дата на пристигане" required><br><br>
+    <input type="date" name="Дата на заминаване" required><br><br>
+    <textarea name="Бележки" placeholder="Допълнителна информация"></textarea><br><br>
+    <input type="submit" value="Изпрати резервация">
+  </form>
 </body>
 </html>
